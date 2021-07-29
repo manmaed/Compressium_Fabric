@@ -47,16 +47,19 @@ public class ComBlocks {
     public static Block clay;
     public static Block quartz;
 
-    public static void load(){
+
+    public static void load() {
         andesite = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(2.0f, 6.0f).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES));
         diorite = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(2.0f, 6.0f).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES));
         granite = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(2.0f, 6.0f).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES));
+        cobblestone = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(2.5f,6.0f).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES));
         stone = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(1.5f,6.0f).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES));
         sand = new FallingBlock(FabricBlockSettings.of(Material.AGGREGATE).requiresTool().strength(0.5f).sounds(BlockSoundGroup.SAND).breakByTool(FabricToolTags.SHOVELS));
         redsand = new FallingBlock(FabricBlockSettings.of(Material.AGGREGATE).requiresTool().strength(0.5f).sounds(BlockSoundGroup.SAND).breakByTool(FabricToolTags.SHOVELS));
         gravel = new Block(FabricBlockSettings.of(Material.AGGREGATE).requiresTool().strength(0.6f).sounds(BlockSoundGroup.GRAVEL).breakByTool(FabricToolTags.SHOVELS));
         netherrack = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(0.4f).sounds(BlockSoundGroup.NETHERRACK).breakByTool(FabricToolTags.PICKAXES));
         dirt = new Block(FabricBlockSettings.of(Material.SOIL).requiresTool().strength(2.0f).sounds(BlockSoundGroup.GRAVEL).breakByTool(FabricToolTags.SHOVELS));
+        endstone = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(3.0f, 9.0f).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES));
         snow = new Block(FabricBlockSettings.of(Material.SNOW_BLOCK).requiresTool().strength(0.2f).sounds(BlockSoundGroup.SNOW).breakByTool(FabricToolTags.SHOVELS));
         soulsand = new Block(FabricBlockSettings.of(Material.AGGREGATE).requiresTool().strength(0.5f).sounds(BlockSoundGroup.SOUL_SAND).breakByTool(FabricToolTags.SHOVELS).velocityMultiplier(0.4F));
         obsidian = new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(50.0f, 1200.0f).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES));
@@ -80,7 +83,7 @@ public class ComBlocks {
     }
 
     private static void compress() {
-        for (int i = 0; i < 9; i++) {
+        for (int i = 1; i < 9; i++) {
             /*makeBlocks();*/
             makeBlocks(andesite, "andesite_" + i);
             makeBlocks(diorite, "diorite_" + i);
