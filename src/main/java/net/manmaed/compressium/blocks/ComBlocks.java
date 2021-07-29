@@ -83,35 +83,35 @@ public class ComBlocks {
     }
 
     private static void compress() {
-        for (int i = 1; i < 9; i++) {
+        for (int i = 0; i < 9; i++) {
             /*makeBlocks();*/
-            makeBlocks(andesite, "andesite_" + i);
-            makeBlocks(diorite, "diorite_" + i);
-            makeBlocks(granite, "granite_" + i);
-            makeBlocks(cobblestone, "cobblestone_" + i);
-            makeBlocks(stone,"stone_" + i);
-            makeBlocks(sand, "sand_" + i); //Falling Entity
-            makeBlocks(redsand, "redsand_" + i); //Falling Entity
-            makeBlocks(gravel, "gravel_" + i); //Falling Entity
-            makeBlocks(netherrack, "netherrack_" + i);
-            makeBlocks(dirt, "dirt_" + i);
-            makeBlocks(endstone, "endstone_" + i);
-            makeBlocks(snow, "snow_" + i);
-            makeBlocks(soulsand, "soulsand_" + i);
-            makeBlocks(obsidian, "obsidian_" + i);
+            makeBlocks(andesite, "andesite_" + (i+1));
+            makeBlocks(diorite, "diorite_" + (i+1));
+            makeBlocks(granite, "granite_" + (i+1));
+            makeBlocks(cobblestone, "cobblestone_" + (i+1));
+            makeBlocks(stone,"stone_" + (i+1));
+            makeBlocks(sand, "sand_" + (i+1)); //Falling Entity
+            makeBlocks(redsand, "redsand_" + (i+1)); //Falling Entity
+            makeBlocks(gravel, "gravel_" + (i+1)); //Falling Entity
+            makeBlocks(netherrack, "netherrack_" + (i+1));
+            makeBlocks(dirt, "dirt_" + (i+1));
+            makeBlocks(endstone, "endstone_" + (i+1));
+            makeBlocks(snow, "snow_" + (i+1));
+            makeBlocks(soulsand, "soulsand_" + (i+1));
+            makeBlocks(obsidian, "obsidian_" + (i+1));
             /*makeBlocks(honey);*/
 
             //Ores
-            makeBlocks(netherite, "netherite_" + i);
-            makeBlocks(coal, "coal_" + i);
-            makeBlocks(lapis,"lapis_" + i);
-            makeBlocks(iron, "iron_" + i);
-            makeBlocks(gold, "gold_" + i);
-            makeBlocks(diamond, "diamond_" + i);
-            makeBlocks(emerald, "emerald_" + i);
-            makeBlocks(redstone, "redstone_" + i);
-            makeBlocks(clay, "clay_" + i);
-            makeBlocks(quartz,"quartz_" + i);
+            makeBlocks(netherite, "netherite_" + (i+1));
+            makeBlocks(coal, "coal_" + (i+1));
+            makeBlocks(lapis,"lapis_" + (i+1));
+            makeBlocks(iron, "iron_" + (i+1));
+            makeBlocks(gold, "gold_" + (i+1));
+            makeBlocks(diamond, "diamond_" + (i+1));
+            makeBlocks(emerald, "emerald_" + (i+1));
+            makeBlocks(redstone, "redstone_" + (i+1));
+            makeBlocks(clay, "clay_" + (i+1));
+            makeBlocks(quartz,"quartz_" + (i+1));
         }
     }
 
