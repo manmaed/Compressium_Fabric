@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "compressium",
+  "version": "${version}",
+
+  "name": "Compressium",
+  "description": "Adding comprseed blocks to the game since 2019",
+  "authors": [
+    "manmaed",
+    "dinnerbeef - Forge Port"
+  ],
+  "license": "ARR",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.manmaed.compressium.Compressium"
+    ],
+    "client": [
+      "net.manmaed.compressium.CompressiumClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "java": ">=16"
+  }
+}
