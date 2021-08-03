@@ -1,6 +1,7 @@
 {
+  "lang.file.name": "Chinese Simplified (China; Mandarin)",
+  "lang.author.name": "qsefthuopq",
   "itemGroup.compressium": "Compressium",
-
 
   "block.compressium.soulsand_1": "压缩灵魂沙 (1x)",
   "block.compressium.soulsand_2": "压缩灵魂沙 (2x)",
@@ -201,16 +202,6 @@
   "block.compressium.quartz_6": "压缩石英块 (6x)",
   "block.compressium.quartz_7": "压缩石英块 (7x)",
   "block.compressium.quartz_8": "压缩石英块 (8x)",
-
-  "block.compressium.honey_1": "压缩蜂蜜块 (1x)",
-  "block.compressium.honey_2": "压缩蜂蜜块 (2x)",
-  "block.compressium.honey_3": "压缩蜂蜜块 (3x)",
-  "block.compressium.honey_4": "压缩蜂蜜块 (4x)",
-  "block.compressium.honey_5": "压缩蜂蜜块 (5x)",
-  "block.compressium.honey_9": "压缩蜂蜜块 (9x)",
-  "block.compressium.honey_6": "压缩蜂蜜块 (6x)",
-  "block.compressium.honey_7": "压缩蜂蜜块 (7x)",
-  "block.compressium.honey_8": "压缩蜂蜜块 (8x)",
 
   "block.compressium.obsidian_1": "压缩黑曜石 (1x)",
   "block.compressium.obsidian_2": "压缩黑曜石 (2x)",

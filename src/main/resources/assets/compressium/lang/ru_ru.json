@@ -1,6 +1,7 @@
 {
+  "lang.file.name": "Russian",
+  "lang.author.name": "DrHesperus",
   "itemGroup.compressium": "Compressium",
-
 
   "block.compressium.soulsand_1": "Сжатый песок душ (1х)",
   "block.compressium.soulsand_2": "Сжатый песок душ (2х)",
@@ -201,16 +202,6 @@
   "block.compressium.quartz_7": "Сжатый кварцевый блок (7х)",
   "block.compressium.quartz_8": "Сжатый кварцевый блок (8х)",
   "block.compressium.quartz_9": "Сжатый кварцевый блок (9х)",
-
-  "block.compressium.honey_1": "Сжатый медовый блок (1х)",
-  "block.compressium.honey_2": "Сжатый медовый блок (2х)",
-  "block.compressium.honey_3": "Сжатый медовый блок (3х)",
-  "block.compressium.honey_4": "Сжатый медовый блок (4х)",
-  "block.compressium.honey_5": "Сжатый медовый блок (5х)",
-  "block.compressium.honey_6": "Сжатый медовый блок (6х)",
-  "block.compressium.honey_7": "Сжатый медовый блок (7х)",
-  "block.compressium.honey_8": "Сжатый медовый блок (8х)",
-  "block.compressium.honey_9": "Сжатый медовый блок (9х)",
 
   "block.compressium.granite_1": "Сжатый гранит (1х)",
   "block.compressium.granite_2": "Сжатый гранит (2х)",
