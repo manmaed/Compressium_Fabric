@@ -1,21 +1,19 @@
 package net.manmaed.compressium.blocks;
 
-import com.mojang.datafixers.types.templates.Tag;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.manmaed.compressium.Compressium;
 import net.manmaed.compressium.util.Reference;
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.FallingBlock;
+import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ToolItem;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.function.Supplier;
 
 /**
@@ -57,8 +55,8 @@ public class ComBlocks {
         andesite = new CompressedBlock<>("andesite", () -> new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(2.0f, 6.0f).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES)));
         diorite = new CompressedBlock<>("diorite", () -> new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(2.0f, 6.0f).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES)));
         granite = new CompressedBlock<>("granite", () -> new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(2.0f, 6.0f).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES)));
-        cobblestone = new CompressedBlock<>("cobblestone", () -> new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(2.5f,6.0f).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES)));
-        stone = new CompressedBlock<>("stone", () -> new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(1.5f,6.0f).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES)));
+        cobblestone = new CompressedBlock<>("cobblestone", () -> new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(2.5f, 6.0f).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES)));
+        stone = new CompressedBlock<>("stone", () -> new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(1.5f, 6.0f).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES)));
         sand = new CompressedBlock<>("sand", () -> new FallingBlock(FabricBlockSettings.of(Material.AGGREGATE).requiresTool().strength(0.5f).sounds(BlockSoundGroup.SAND).breakByTool(FabricToolTags.SHOVELS)));
         redsand = new CompressedBlock<>("redsand", () -> new FallingBlock(FabricBlockSettings.of(Material.AGGREGATE).requiresTool().strength(0.5f).sounds(BlockSoundGroup.SAND).breakByTool(FabricToolTags.SHOVELS)));
         gravel = new CompressedBlock<>("gravel", () -> new Block(FabricBlockSettings.of(Material.AGGREGATE).requiresTool().strength(0.6f).sounds(BlockSoundGroup.GRAVEL).breakByTool(FabricToolTags.SHOVELS)));
@@ -83,25 +81,4 @@ public class ComBlocks {
         quartz = new CompressedBlock<>("quartz", () -> new Block(FabricBlockSettings.of(Material.STONE).requiresTool().strength(0.8f).sounds(BlockSoundGroup.STONE).breakByTool(FabricToolTags.PICKAXES)));
 
     }
-
-    public static class CompressedBlock<T extends Block> {
-
-        private final Map<Integer, T> blocks;
-
-        public CompressedBlock(String name, Supplier<T> blockSupplier) {
-            this.blocks = new HashMap<>();
-            for (int i = 0; i < 9; i++) {
-                String blockName = name + "_" + (i + 1);
-                T block = blockSupplier.get();
-                blocks.put(i + 1, block);
-                Registry.register(Registry.BLOCK, new Identifier(Reference.MOD_ID, blockName), block);
-                Registry.register(Registry.ITEM, new Identifier(Reference.MOD_ID, blockName), new BlockItem(block, new Item.Settings().group(Compressium.ITEM_GROUP)));
-            }
-        }
-
-        public Optional<T> getBlock(int teir) {
-            return Optional.ofNullable(blocks.get(teir));
-        }
-    }
-
 }

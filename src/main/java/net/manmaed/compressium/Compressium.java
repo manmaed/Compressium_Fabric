@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
  */
 public class Compressium implements ModInitializer {
     //TODO: Make Tab icon to CobbleStone_1
-    public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.create(new Identifier(Reference.MOD_ID, "itemgroup")).icon(() -> new ItemStack(Blocks.COBBLESTONE.asItem())).build();
+    public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.create(new Identifier(Reference.MOD_ID, "itemgroup")).icon(() -> new ItemStack(ComBlocks.cobblestone.getBlock(1).orElse(Blocks.COBBLESTONE))).build();
 
     @Override
     public void onInitialize() {
