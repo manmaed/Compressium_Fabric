@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xxx",
+    "xxx",
+    "xxx"
+  ],
+  "key": {
+    "x": {
+      "item": "compressium:netherite_4"
+    }
+  },
+  "result": {
+    "item": "compressium:netherite_5"
+  }
+}
