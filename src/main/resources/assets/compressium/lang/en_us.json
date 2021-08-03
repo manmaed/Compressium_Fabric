@@ -1,7 +1,7 @@
 {
   "lang.file.name": "Engish (US)",
   "lang.author.name": "Dinnerbeef",
-  "itemGroup.compressium": "Compressium",
+  "itemGroup.compressium.itemgroup": "Compressium",
 
   "block.compressium.soulsand_1": "Compressed Soul Sand (1x)",
   "block.compressium.soulsand_2": "Compressed Soul Sand (2x)",
@@ -43,15 +43,15 @@
   "block.compressium.clay_8": "Compressed Clay (8x)",
   "block.compressium.clay_9": "Compressed Clay (9x)",
 
-  "block.compressium.cobblestone_1": "Compressed Cobble (1x)",
-  "block.compressium.cobblestone_2": "Compressed Cobble (2x)",
-  "block.compressium.cobblestone_3": "Compressed Cobble (3x)",
-  "block.compressium.cobblestone_4": "Compressed Cobble (4x)",
-  "block.compressium.cobblestone_5": "Compressed Cobble (5x)",
-  "block.compressium.cobblestone_6": "Compressed Cobble (6x)",
-  "block.compressium.cobblestone_7": "Compressed Cobble (7x)",
-  "block.compressium.cobblestone_8": "Compressed Cobble (8x)",
-  "block.compressium.cobblestone_9": "Compressed Cobble (9x)",
+  "block.compressium.cobblestone_1": "Compressed Cobblestone (1x)",
+  "block.compressium.cobblestone_2": "Compressed Cobblestone (2x)",
+  "block.compressium.cobblestone_3": "Compressed Cobblestone (3x)",
+  "block.compressium.cobblestone_4": "Compressed Cobblestone (4x)",
+  "block.compressium.cobblestone_5": "Compressed Cobblestone (5x)",
+  "block.compressium.cobblestone_6": "Compressed Cobblestone (6x)",
+  "block.compressium.cobblestone_7": "Compressed Cobblestone (7x)",
+  "block.compressium.cobblestone_8": "Compressed Cobblestone (8x)",
+  "block.compressium.cobblestone_9": "Compressed Cobblestone (9x)",
 
   "block.compressium.sand_1": "Compressed Sand (1x)",
   "block.compressium.sand_2": "Compressed Sand (2x)",

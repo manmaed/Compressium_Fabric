@@ -1,7 +1,7 @@
 {
   "lang.file.name": "Pirate Speak",
   "lang.author.name": "manmaed",
-  "itemGroup.compressium": "Compressium",
+  "itemGroup.compressium.itemgroup": "Compressium",
 
   "block.compressium.soulsand_1": "Compressed Sand o' the Devil (1x)",
   "block.compressium.soulsand_2": "Compressed Sand o' the Devil (2x)",

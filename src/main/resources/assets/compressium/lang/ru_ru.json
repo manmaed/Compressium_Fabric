@@ -1,7 +1,7 @@
 {
   "lang.file.name": "Russian",
   "lang.author.name": "DrHesperus",
-  "itemGroup.compressium": "Compressium",
+  "itemGroup.compressium.itemgroup": "Compressium",
 
   "block.compressium.soulsand_1": "Сжатый песок душ (1х)",
   "block.compressium.soulsand_2": "Сжатый песок душ (2х)",

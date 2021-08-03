@@ -1,7 +1,7 @@
 {
   "lang.file.name": "LOLCATS",
   "lang.author.name": "manmaed",
-  "itemGroup.compressium": "Comppressium",
+  "itemGroup.compressium.itemgroup": "Comppressium",
 
   "block.compressium.soulsand_1": "Comppressed sole snd (1x)",
   "block.compressium.soulsand_2": "Comppressed sole snd (2x)",
